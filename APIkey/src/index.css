@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(119, 119, 119, 0.87);
+  color: rgba(208, 208, 208, 0.87);
   background-color: #394f65;
 
   font-synthesis: none;
@@ -50,15 +50,16 @@ h1 {
 }
 
 button {
-  color: cyan;
+  color: rgb(0, 72, 255);
   background-color: steelblue;
   margin-left: 10px;
 }
 
 h1 {
-  color: aliceblue;
+  color: rgb(0, 77, 144);
   font-size: 5em;
   letter-spacing: 8px;
   text-shadow: 0 0 10px cyan,
-  0 0 20px
+  0 0 20px,
+  0 0 40px;
 }

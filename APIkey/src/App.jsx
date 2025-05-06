@@ -14,7 +14,7 @@ const BusStopComponent = () => {
       const response = await fetch(atApiUrl, {
         method: 'GET',
         headers: {
-          'Ocp-Apim-Subscription-Key': '89898356ba9b4483872d2bdb618f07c6',
+          'Ocp-Apim-Subscription-Key': import.meta.env.VITE_AT_SUBSCRIPTION_API_KEY,
         }
       });
       if (!response.ok) {
@@ -37,7 +37,7 @@ const BusStopComponent = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>Bus stop</h1>
       <h2>Stop: {stopInfo.stop_name || 'N/A'}</h2>
         <p>Location: Lat: {stopInfo.stop_lat}, Lon: {stopInfo.stop_lon}</p>
@@ -49,7 +49,7 @@ const BusStopComponent = () => {
           value={stopId} 
           onChange={handleInputChange} 
         />
-        <button type="submit" title="send">Fetch Stop Data</button>
+        <button type="submit" title="send">Fetch  Data</button>
       </form>
     </div>
   );
